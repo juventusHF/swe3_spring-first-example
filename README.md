@@ -1,8 +1,8 @@
-# First Spring Example
+# Übung zum Spring Framework
 
-Check how the Spring dependency is declared in `pom.xml`.
+Scha nach, wie im `pom.xml` die Abhängigkeit zum Spring Framework deklariert ist.
 
-In `App.java`, replace the main method with the following code:
+Ersetze die Main-Methode in `App.java` mit dem folgenden Code:
 
      public static void main(String[] args) {
          ApplicationContext context = new ClassPathXmlApplicationContext("services.xml");
@@ -10,10 +10,11 @@ In `App.java`, replace the main method with the following code:
          System.out.println(petStore.loadAllPets());
      }
 
-This will set up the Spring application context and load the Spring beans from `services.xml`.
+Dadurch wird der Spring Application Context initialisiert, welcher die Spring Beans Definitionen aus `services.xml` lädt.
+Das `petStore` Bean wird aus dem Container geladen und benutzt.
 
-Add the following bean definition to `src/main/resources/services.xml`:
+Dazu muss allerdings die folgende Bean-Definition zu `src/main/resources/services.xml` hinzugefügt werden:
 
     <bean id="petStore" class="ch.juventus.example.PetStoreImpl"/>
        
-Now run the `main` method in `App`. This should print out a list of pets.
+Jetzt kannst Du die Main-Methode in `App` ausführen. Dies wird eine Liste von Pets ausgeben.
