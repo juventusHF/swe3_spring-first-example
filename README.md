@@ -1,6 +1,6 @@
 # Übung zum Spring Framework
 
-Scha nach, wie im `pom.xml` die Abhängigkeit zum Spring Framework deklariert ist.
+Sieh nach, wie im `pom.xml` die Abhängigkeit zum Spring Framework deklariert ist.
 
 Ersetze die Main-Methode in `App.java` mit dem folgenden Code:
 
